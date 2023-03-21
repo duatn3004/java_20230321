@@ -1,0 +1,12 @@
+package studentManager;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Subject s = new Subject(00000, "생활속의 심리학", 3, 9, "홍길동", 1, "사회", 6);
+		s.code();
+		s.oneSubject();
+	}
+
+}

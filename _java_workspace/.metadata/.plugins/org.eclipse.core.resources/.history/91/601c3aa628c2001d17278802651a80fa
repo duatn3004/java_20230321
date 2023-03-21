@@ -1,0 +1,113 @@
+package studentManager;
+
+public class Subject {
+	/*
+	 * class - subject(별도 생성) 과목클래스 : 한 과목의 정보를 나타내는 클래스
+	 * -과목코드,과목명,학점,시수,교수명,학기,분류,수업시간표
+	 */
+	private int code;
+	private String name;
+	private int score;
+	private int time;
+	private String sname;
+	private int semester;
+	private String track;
+	private int schedule;
+	
+	
+	public Subject(int code, String name, int score, int time, String sname, int semester,String track,int schedule) {
+		this.code = code;
+		this.name = name;
+		this.score = score;
+		this.time = time;
+		this.sname = sname;
+		this.semester = semester;
+		this.track = track;
+		this.schedule = schedule;
+	}
+	public void oneSubject() {
+		System.out.println("과목코드:"+code);
+		System.out.println("과목명:"+name);
+		System.out.println("학점:"+score);
+		System.out.println("시수:"+time);
+		System.out.println("교수명:"+sname);
+		System.out.println("학기:"+semester);
+		System.out.println("분류:"+track);
+		System.out.println("수업시간표:"+schedule);
+	}
+	
+	public void code() {
+		System.out.println("과목코드 :"+code);
+	}
+	public void name() {
+		System.out.println("과목명 :"+name);
+	}
+	public void score() {
+		System.out.println("학점 :"+score);
+	}
+	public void time() {
+		System.out.println("시수 :"+time);
+	}
+	public void sname() {
+		System.out.println("교수명 :"+sname);
+	}
+	public void semester() {
+		System.out.println("학기 :"+semester);
+	}
+	public void track() {
+		System.out.println("분류 :"+track);
+	}
+	public void schedule() {
+		System.out.println("수업시간표 :"+schedule);
+	}
+	
+	public int getCode() {
+		return code;
+	}
+	public void setCode(int code) {
+		this.code = code;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public int getScore() {
+		return score;
+	}
+	public void setScore(int score) {
+		this.score = score;
+	}
+	public int getTime() {
+		return time;
+	}
+	public void setTime(int time) {
+		this.time = time;
+	}
+	public String getSname() {
+		return sname;
+	}
+	public void setSname(String sname) {
+		this.sname = sname;
+	}
+	public int getSemester() {
+		return semester;
+	}
+	public void setSemester(int semester) {
+		this.semester = semester;
+	}
+	public String getTrack() {
+		return track;
+	}
+	public void setTrack(String track) {
+		this.track = track;
+	}
+	public int getSchedule() {
+		return schedule;
+	}
+	public void setSchedule(int schedule) {
+		this.schedule = schedule;
+	}
+	
+}

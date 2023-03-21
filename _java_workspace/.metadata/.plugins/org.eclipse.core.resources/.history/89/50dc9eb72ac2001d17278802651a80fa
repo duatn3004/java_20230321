@@ -1,0 +1,23 @@
+package studentManager;
+
+public class student {
+	/*class - student (별도 생성)
+	학생클래스 : 한 학생의 정보를 나타내는 클래스
+	-학번, 이름, 주민번호, 학부, 학과, 수강과목s(과목클래스를 배열생성)
+	-수강과목의 번지를 대신할 count 
+	-메서드
+ 	-수강과목 추가(배열이 다 찼다면 늘려주기)
+ 	-수강과목 삭제 
+ 	*/
+	private String stcode;
+	private String stname;
+	private String stnumber;
+	private String stschool;
+	private String stban;
+	private String stsubject;
+	
+	public student() {}
+	public student(String stcode,String stname,String stnumber,String stschool,String stban,String stsubject) {
+		
+	}
+}

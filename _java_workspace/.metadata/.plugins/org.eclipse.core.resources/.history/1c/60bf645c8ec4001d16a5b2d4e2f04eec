@@ -1,0 +1,24 @@
+package day16;
+
+import java.util.ArrayList;
+
+public class StreamEX03 {
+
+	public static void main(String[] args) {
+		ArrayList<Student> list = new ArrayList<Student>();
+		list.add(new Student("홍길동",90));
+		list.add(new Student("홍길순",87));
+		list.add(new Student("임꺽정",67));
+		list.add(new Student("강길동",80));
+		list.add(new Student("강길순",95));
+		
+		list.stream().forEach(n->System.out.println(n));
+		
+		long m = list.stream().count();
+		System.out.print("인원:"+m);
+		
+		int sum = list.stream().mapToInt(n->n.getScore()).sum();
+		System.out.println(" 합계:"+sum);
+	}
+
+}

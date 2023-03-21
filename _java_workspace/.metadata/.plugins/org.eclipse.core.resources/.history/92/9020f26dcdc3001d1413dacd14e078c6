@@ -1,0 +1,18 @@
+package day15;
+
+import java.util.Scanner;
+
+public class WordMain {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		WordManager wm = new WordManager();
+		Scanner scan = new Scanner(System.in);
+		wm.add(scan);
+		wm.printWord();
+		wm.pick(scan);
+		wm.replace(scan);
+
+	}
+
+}

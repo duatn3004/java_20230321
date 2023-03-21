@@ -1,0 +1,39 @@
+package day17;
+
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.HashMap;
+import java.util.Map;
+
+public class BufferedReaderEx03 {
+
+	public static void main(String[] args) throws IOException {
+		/* out.txt파일을 읽어들여 map에 저장후
+		 * 이름:점수
+		 * 총 합계 총인원 출력
+		 * */ 
+		String name;
+		int score;
+		int sum = 0;
+		BufferedReader br = new BufferedReader(new FileReader("out.txt"));
+		Map<String, Integer> map = new HashMap<String, Integer>();
+		while(true) {
+			String line = br.readLine();
+			if(line == null) {
+				break;
+			}
+			name = line.substring(0,line.indexOf(" "));
+			score = Integer.parseInt(line.substring(line.indexOf(" ")+1));
+			map.put(name, score);
+		}
+		for(String s : map.keySet()) {
+			System.out.println(s+":"+map.get(s));
+			sum+=map.get(s);
+		}
+		System.out.println("총 합계:"+sum);
+
+	}
+
+}

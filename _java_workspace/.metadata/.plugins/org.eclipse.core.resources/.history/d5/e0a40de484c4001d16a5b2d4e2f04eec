@@ -1,0 +1,23 @@
+package day16;
+
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+import java.util.stream.Stream;
+
+public class StreamEx {
+
+	public static void main(String[] args) {
+		/* 문자열(이름)을 담는 리스트 생성후, 스트림으로 생성
+		 * 정렬하여 출력
+		 * */
+		ArrayList<String> name = new ArrayList<String>();
+		name.add("홍길동");
+		name.add("홍길순");
+		name.add("임꺽정");
+		
+		Stream<String> s = name.stream();
+		s.sorted().forEach(n->System.out.println(n));
+		
+	}
+
+}
